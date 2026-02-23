@@ -50,28 +50,29 @@ def calcular_media(valores):
 
 
 def calcular_amplitude(valores):
-        maximo = max(valores)
-        minimo = min(valores)
-        return maximo - minimo
-
+    
     '''
     Função para calcular a amplitude dos valores em uma lista
     Retorna zero se a lista estiver vazia
     '''
+    maximo = max(valores)
+    minimo = min(valores)
+    return maximo - minimo
+
 def calcular_projecao(valores, fator):
     pass
 
 def exibir_resultados(dados):
-     '''Mostra os dados e cálculos realizados'''
+    '''Mostra os dados e cálculos realizados'''
     print (f"Dados gerados: {dados}")
     print (f"Soma: {calcular_total(dados)}")
     media = calcular_media(dados)
     print (f"Média: {media:.2f}")
     print (f"Amplitude: {calcular_amplitude(dados)}")
 def main():
-     qtd = 10
-     minimo = 0
-     maximo = 100
-     dados = gerar_dados(qtd, minimo, maximo)
-     exibir_resultados(dados)
+    qtd = 10
+    minimo = 0
+    maximo = 100
+    dados = gerar_dados(qtd, minimo, maximo)
+    exibir_resultados(dados)
 main()
